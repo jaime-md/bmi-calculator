@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Body Mass Index (BMI) Calculator</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="theme.css" />
+	<script type="text/javascript" src="//use.typekit.net/cve0fiu.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="brain.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+	    bmInit();
+	  });
+	</script>
+</head>
+<body>
+	
+	<div class="height column">
+  	<div class="button" id="moreH">+</div>
+  	<input type="text" class="display" value="165" />
+  	<div class="button" id="lessH">-</div>
+  	<h2 class="unit legend">Cm</h2>
+	</div><!-- end height -->
+	
+	<div class="weight column">
+  	<div class="button" id="moreW">+</div>
+  	<input type="text" class="display" value="60" />
+  	<div class="button" id="lessW">-</div>
+  	<h2 class="unit legend">Kg</h2>
+	</div><!-- end weight -->
+	
+	<div class="bmi column">
+  	<div class="subtitle">Your Body Mass Index is:</div>
+  	<div class="display">0</div>
+  	<h2 class="result subtitle"></h2>
+	</div><!-- end bmi -->
+	
+	<p>Your BMI: <span class="bmi-small">31.2</span> is set in the typeface Adelle Sans <span class="font-weight"></span></p>
+	
+</body>
+
+</html>
